@@ -1,0 +1,59 @@
+.header {
+}
+.header-nav {
+  padding-top: 7.3rem;
+}
+.header-nav__container {
+  display: flex;
+  align-items: center;
+}
+.site-logo {
+  margin-right: 8rem;
+}
+.sitenav {
+  margin-right: auto;
+}
+.navbar-toggle {
+  display: none;
+}
+.sitenav-list {
+  display: flex;
+
+  gap: 4rem;
+
+  a {
+    color: $primary-whtie;
+    font-weight: 600;
+    line-height: 1.55rem;
+    font-size: 1.8rem;
+    &:hover {
+      color: $primary-ligth-coral;
+    }
+  }
+}
+
+.navbar-toggle {
+  display: none;
+  background-color: none;
+  border: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .sitenav {
+    display: none;
+  }
+  .header-link {
+    display: none;
+  }
+  .header-nav__container {
+    justify-content: space-between;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+// .button {
+// }
+// .light-btn {
+// }

@@ -306,4 +306,198 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px dotted #f67e7e;
+  outline-offset: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+img {
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover; /* contain */
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #014e56;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+/* livvic-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/livvic-v14-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/livvic-v14-latin-500italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/livvic-v14-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/livvic-v14-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* livvic-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Livvic";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/livvic-v14-latin-700italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+body {
+  font-family: "Livvic", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.66;
+  color: #ffffff;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.55;
+  border-radius: 2.4rem;
+  border: 2px solid transparent;
+  padding: 0.9rem 3.3rem 1.1rem 3.2rem;
+  transition: 0.2s ease;
+}
+
+.light-btn {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.light-btn:hover {
+  background-color: #ffffff;
+  color: #002529;
+}
+
+.dark-btn {
+  color: #002529;
+  border-color: #002529;
+}
+.dark-btn:hover {
+  background-color: #002529;
+  color: #ffffff;
+}
+
+.header-nav {
+  padding-top: 7.3rem;
+}
+
+.header-nav__container {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo {
+  margin-right: 8rem;
+}
+
+.sitenav {
+  margin-right: auto;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.sitenav-list {
+  display: flex;
+  gap: 4rem;
+}
+.sitenav-list a {
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.55rem;
+  font-size: 1.8rem;
+}
+.sitenav-list a:hover {
+  color: #f67e7e;
+}
+
+.navbar-toggle {
+  display: none;
+  background-color: none;
+  border: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .sitenav {
+    display: none;
+  }
+  .header-link {
+    display: none;
+  }
+  .header-nav__container {
+    justify-content: space-between;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+}
+main {
+  flex-grow: 1;
 }/*# sourceMappingURL=style.css.map */
